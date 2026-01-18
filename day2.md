@@ -81,7 +81,7 @@ they match, replace the item e.g.
      j
 
    i
-[1,2,2,2,3,4] // i is now 1 (i++) and replaces the item
+[1,2,2,2,3,4] // i is now index 1 (i++) and replaces the item
        j
 ```
 
