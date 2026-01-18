@@ -36,3 +36,20 @@ This would have the O(n²) complexity.
 
 A more robust solution would be using the multiple pointers, which moves the index either from the start, or the end,
 eventually they'll catch up and find the pair if the pair exists.
+
+```
+function sumZero(arr){
+    let left = 0;
+    let right = arr.length - 1;
+    while(left < right){
+        let sum = arr[left] + arr[right];
+        if(sum === 0){
+            return [arr[left], arr[right]];
+        } else if(sum > 0){
+            right--;
+        } else {
+            left++;
+        }
+    }
+}
+```
