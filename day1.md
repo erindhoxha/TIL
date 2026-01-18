@@ -12,7 +12,7 @@
   - Algorithms like binary search use O(log n) time.
   - With each step, the problem size is divided (e.g., in half), making it much faster for large inputs.
 
-I added this solution for the Anagram:
+I added this solution for the anagram challenge:
 
 ```
 function validAnagram(str1, str2) {
@@ -39,7 +39,7 @@ function validAnagram(str1, str2) {
 }
 ```
 
-There's another (better) solution that is:
+There's another more efficient solution that is:
 
 ```
 function validAnagram(first, second) {
