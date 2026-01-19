@@ -1,5 +1,7 @@
 # Today I Learned
 
+Started from 17th of January, 2025
+
 ## Days
 
 - [Day 1](day1.md)
