@@ -89,3 +89,23 @@ Then, we just remove the first `2`, and add the next item in the array so:
 If the next one is larger than the last, the `Math.max` will replace it.
 
 At the end, we return the maxSum.
+
+## Also learned
+
+- Learned the Divide and Conquer pattern
+  - This pattern involves dividing a dataset into smaller data chunks and then repeating a process with a subset of
+    data.
+  - This pattern can tremendously decrease time complexity.
+
+Some examples include Binary Search, for example instead of trying to find the index of a number in an array e.g.
+`([1,2,3,4,5], 4) // 3 (index)` in Linear Search, it's better to halve the array, then use that subarray.
+
+Example:
+
+- `[1,2,3,4,5,6]` -> Start from 3
+- Is 3 greater than 4?
+- No, then remove `[1,2,3]`
+- Start from the middle of `[4,5,6]`
+- Is 5 greater than 4?
+- Yes, then remove `[5,6]`
+- 4 is left, so the result is 4
