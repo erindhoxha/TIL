@@ -33,9 +33,9 @@ function areThereDuplicates(...args) {
 
 There is another challenge:
 
-Frequency Counter - constructNote Write a function called constructNote, which accepts two strings, a message and some
-letters. The function should return true if the message can be built with the letters that you are given, or it should
-return false.
+Frequency Counter - `constructNote` - Write a function called `constructNote`, which accepts two strings, a message and
+some letters. The function should return true if the message can be built with the letters that you are given, or it
+should return false.
 
 Assume that there are only lowercase letters and no space or special characters in both the message and the letters.
 
@@ -80,7 +80,7 @@ function findAllDuplicates(arr){
 }
 ```
 
-Multiple Pointers - averagePair Write a function called averagePair. Given a sorted array of integers and a target
+Multiple Pointers - `averagePair` - Write a function called `averagePair`. Given a sorted array of integers and a target
 average, determine if there is a pair of values in the array where the average of the pair equals the target average.
 There may be more than one pair that matches the average target.
 
@@ -112,10 +112,10 @@ function averagePair(arr, avgParam){
 averagePair([1,1,2,4,5], 3);
 ```
 
-Multiple Pointers - isSubsequence Write a function called isSubsequence which takes in two strings and checks whether
-the characters in the first string form a subsequence of the characters in the second string. In other words, the
-function should check whether the characters in the first string appear somewhere in the second string, without their
-order changing.
+Multiple Pointers - `isSubsequence` - Write a function called `isSubsequence` which takes in two strings and checks
+whether the characters in the first string form a subsequence of the characters in the second string. In other words,
+the function should check whether the characters in the first string appear somewhere in the second string, without
+their order changing.
 
 My solution:
 
@@ -135,8 +135,8 @@ function isSubsequence(sub, sequence) {
 }
 ```
 
-Frequency Counter / Multiple Pointer - findPair Given an unsorted array and a number n, find if there exists a pair of
-elements in the array whose difference is n. This function should return true if the pair exists or false if it does
+Frequency Counter / Multiple Pointer - `findPair` - Given an unsorted array and a number n, find if there exists a pair
+of elements in the array whose difference is n. This function should return true if the pair exists or false if it does
 not.
 
 ```
