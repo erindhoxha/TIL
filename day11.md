@@ -91,15 +91,15 @@ Setup I recommend: Playwright + Percy
 
 **Percy with Browserstack?**
 
-- How it works**:** BrowserStack spins up \***\*real devices and browsers in the cloud**,\*\* Percy then takes snapshots
-  of those sessions.
-- Pros**:**
+- How it works: BrowserStack spins up real devices and browsers in the cloud, Percy then takes snapshots of those
+  sessions.
+- Pros:
   - Tests real devices (iOS, Android, Safari, old Edge)
   - Captures true device/browser layout issues
-- Cons**:**
+- Cons:
   - Expensive, slower than CI headless browsers
   - Dynamic content masking is harder
-- Use case**:** Optional pre-production QA or high-risk campaigns; not needed for daily PR checks.
+- Use case: Optional pre-production QA or high-risk campaigns; not needed for daily PR checks.
 
 **Percy with playwright?**
 
@@ -121,8 +121,8 @@ Setup I recommend: Playwright + Percy
   - See side-by-side comparisons of baseline vs current build
   - Toggle overlay to highlight differences
   - Approve or decline each snapshot
-- Approve**:** baseline updated for future comparisons
-- Decline**:** developer fixes the issue → new snapshot uploaded → Slack alerts marketing again
+- Approve: baseline updated for future comparisons
+- Decline: developer fixes the issue → new snapshot uploaded → Slack alerts marketing again
 
 **How it’ll look like?**
 
