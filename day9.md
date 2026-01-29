@@ -21,15 +21,15 @@ I'm reading more how to use Percy + BrowserStack and some notes I've written in 
 
 **Percy with Browserstack?**
 
-- How it works**:** BrowserStack spins up \***\*real devices and browsers in the cloud**,\*\* Percy then takes snapshots
-  of those sessions.
-- Pros**:**
+- How it works: BrowserStack spins up real devices and browsers in the cloud, Percy then takes snapshots of those
+  sessions.
+- Pros:
   - Tests real devices (iOS, Android, Safari, old Edge)
   - Captures true device/browser layout issues
-- Cons**:**
+- Cons:
   - Expensive, slower than CI headless browsers
   - Dynamic content masking is harder
-- Use case**:** Optional pre-production QA or high-risk campaigns; not needed for daily PR checks.
+- Use case: Optional pre-production QA or high-risk campaigns; not needed for daily PR checks.
 
 **Percy with playwright?**
 
