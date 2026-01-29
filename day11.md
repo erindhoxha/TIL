@@ -128,14 +128,8 @@ Setup I recommend: Playwright + Percy
 
 - In CI: Playwright + Percy runs → snapshots uploaded → Slack alerts
 - Percy dashboard:
-
-  ```
-  Baselinesnapshot |Newsnapshot | Pixel diff highlighted
-
-  ```
-
-  - Marketing sees red highlights for removed/changed elements, green for new elements
-  - Multi-viewport tabs: Desktop / Tablet / Mobile
+- Marketing sees red highlights for removed/changed elements, green for new elements
+- Multi-viewport tabs: Desktop / Tablet / Mobile
 
 ### BrowserStack
 
