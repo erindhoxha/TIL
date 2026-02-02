@@ -6,71 +6,38 @@ https://www.youtube.com/watch?v=UYnCQEHx7ZU
 Also started trading a bit on Binance, trading with BTC/USD / 2x, also just refreshing with how to stop/loss and do
 limits.
 
-WIP - More incoming
+Short vs Long
 
-## Day 12
+Long (going long)
 
-Learned more about AI Assist. We can also set singular field actions.
+You buy an asset because you think the price will go up.
 
-To set `AI Assist` from Sanity to a field, we'd need to set it in options example:
+Example: Bitcoin is at $40,000
 
-```
- options: {
-   aiAssist: {
-     translateAction: true,
-   },
- }
-```
+You go long Price goes to $45,000
 
-Also, there's a challenge. If we use Translation plugin with `internationalizedStringArray` values, then the AI Assist
-works on the whole block e.g. (Input `en` and Input `es`), but what about a single input, just Input `es` for example?
+You profit 💰 Think: “Long = price up”
 
-Then we can set an action to those inputs, which we could translate these manually. How it works is, adding this in the
-`sanity.config.ts` file:
+---
 
-```
-    fieldActions: {
-      title: 'Translate Actions',
-      useFieldActions: (props) => {
-        const { actionType, schemaId, documentIdForAction, path, getConditionalPaths } = props;
-        const client = useClient({ apiVersion: process.env.NEXT_SANITY_API_VERSION || 'vX' });
+Short (going short)
 
-        return useMemo(() => {
-          if (actionType !== 'field') return [];
+You profit if the price goes down.
 
-          return [
-            defineAssistFieldAction({
-              title: 'Translate to Spanish',
-              onAction: async () => {
-                await client.agent.action.transform({
-                  schemaId,
-                  documentId: documentIdForAction,
-                  instruction: 'Translate this text to Spanish',
-                  instructionParams: {
-                    field: { type: 'field', path },
-                  },
-                  target: path.length ? { path } : undefined,
-                  conditionalPaths: { paths: getConditionalPaths() },
-                });
-              },
-            }),
-            defineAssistFieldAction({
-              title: 'Translate to English',
-              onAction: async () => {
-                await client.agent.action.transform({
-                  schemaId,
-                  documentId: documentIdForAction,
-                  instruction: 'Translate this text to English',
-                  instructionParams: {
-                    field: { type: 'field', path },
-                  },
-                  target: path.length ? { path } : undefined,
-                  conditionalPaths: { paths: getConditionalPaths() },
-                });
-              },
-            }),
-          ];
-        }, [actionType, schemaId, documentIdForAction, path, getConditionalPaths, client]);
-      },
-    }
-```
+How it works (conceptually):
+
+You borrow the asset (e.g. BTC)
+
+You sell it at the current price
+
+Price drops
+
+You buy it back cheaper and return it
+
+The difference is your profit
+
+Example: Bitcoin is at $40,000
+
+You short Price drops to $35,000
+
+You profit 💰 Think: “Short = price down”
