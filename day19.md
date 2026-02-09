@@ -1,6 +1,29 @@
 ## Day 19
 
-I learned that `marks` and `blocks` are different in WYSIWYG.
+Today I learned about the distinction between **`marks`** and **`blocks`** in WYSIWYG editors like Sanity's Portable
+Text, and why it’s important when rendering rich text in React.
+
+In Portable Text:
+
+- **Marks** are **inline formatting** applied to text segments.  
+  They affect only part of a block, like a single word or phrase. Examples include:
+  - `strong` → bold text
+  - `em` → italic
+  - `underline` → underlined text
+  - `strike` → strikethrough
+  - `code` → inline code snippet
+  - `link` → clickable anchor tags
+
+- **Blocks** are structural elements that define the layout of content. They wrap multiple inline marks or plain text.
+  Examples include:
+  - `Headings`: h1–h6
+  - `Paragraphs`: normal
+  - `Blockquotes`: blockquote
+  - `Code blocks`: code
+
+- **Lists** are a special kind of block that can be nested and can have custom styles:
+  - `bullet` → unordered lists (`<ul>`)
+  - `number` → ordered lists (`<ol>`)
 
 Example:
 

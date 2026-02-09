@@ -15,3 +15,5 @@ I find it interesting that we can create new Sanity items through:
 ```
 
 - Learned about Codex, a tool that you can vibe code with. Pretty cool and it seems great for small projects.
+
+https://openai.com/codex/

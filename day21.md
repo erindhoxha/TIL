@@ -1,6 +1,6 @@
 ## Day 21
 
-If you want to reset staging or any branch, here's the snippet you need:
+If we want to reset staging or any branch, here's the snippet we need:
 
 ```
 git switch main # Switch to main branch
