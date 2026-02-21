@@ -1,4 +1,4 @@
-# Day 28
+## Day 28
 
 Today I learned about using the **`inline` layout** for background images in the Hero block.
 

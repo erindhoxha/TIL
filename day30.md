@@ -1,4 +1,4 @@
-# Day 30
+## Day 30
 
 Today I learned about **adding optional borders to sections** instead of having a fixed `border-bottom` for every
 section.
